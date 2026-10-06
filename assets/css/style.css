@@ -15,7 +15,7 @@
 [data-bs-theme="dark"] {
     --bg-color: #03045e;
     --text-color: #e0fbfc;
-    --card-bg: rgba(2, 62, 138, 0.4);
+    --card-bg: rgba(0, 0, 0, 0.3); /* Subtle glass instead of heavy blue */
     --timeline-border: rgba(144, 224, 239, 0.2);
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 [data-bs-theme="dark"] .navbar-scrolled {
-    background: rgba(2, 62, 138, 0.3) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -260,11 +260,22 @@ body {
     backdrop-filter: blur(10px);
 }
 [data-bs-theme="dark"] .glass-card {
-    background: rgba(2, 62, 138, 0.4);
+    background: rgba(0, 0, 0, 0.3);
 }
 [data-bs-theme="light"] .glass-card {
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.glass-footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+[data-bs-theme="dark"] .glass-footer {
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cert-card {
@@ -285,8 +296,8 @@ body {
 /* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
+    bottom: 100px;
+    right: 30px;
     width: 60px;
     height: 60px;
     font-size: 30px;
