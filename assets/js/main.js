@@ -24,37 +24,33 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarShrink();
     document.addEventListener('scroll', navbarShrink);
 
-    // Initialize tsParticles for the hero background
+    // Initialize tsParticles for the hero background (Organic Orbs)
     if (document.getElementById("particles-js")) {
         tsParticles.load("particles-js", {
             fpsLimit: 60,
             particles: {
                 number: {
-                    value: 40,
+                    value: 15,
                     density: { enable: true, value_area: 800 }
                 },
-                color: { value: "#ffffff" },
+                color: { value: ["#00b4d8", "#90e0ef", "#caf0f8", "#ffffff"] },
                 shape: { type: "circle" },
                 opacity: {
-                    value: 0.3,
+                    value: 0.6,
                     random: true,
-                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+                    anim: { enable: true, speed: 0.5, opacity_min: 0.2, sync: false }
                 },
                 size: {
-                    value: 3,
+                    value: 40,
                     random: true,
-                    anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+                    anim: { enable: true, speed: 2, size_min: 15, sync: false }
                 },
                 line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#ffffff",
-                    opacity: 0.2,
-                    width: 1
+                    enable: false /* Removed generic lines for organic feel */
                 },
                 move: {
                     enable: true,
-                    speed: 1,
+                    speed: 0.8,
                     direction: "none",
                     random: true,
                     straight: false,
@@ -65,13 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
             interactivity: {
                 detect_on: "canvas",
                 events: {
-                    onhover: { enable: true, mode: "grab" },
+                    onhover: { enable: true, mode: "bubble" },
                     onclick: { enable: true, mode: "push" },
                     resize: true
                 },
                 modes: {
-                    grab: { distance: 140, line_linked: { opacity: 1 } },
-                    push: { particles_nb: 4 }
+                    bubble: { distance: 250, size: 60, duration: 2, opacity: 0.8 },
+                    push: { particles_nb: 3 }
                 }
             },
             retina_detect: true

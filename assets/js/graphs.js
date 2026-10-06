@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function getThemeColors() {
         const isDark = document.documentElement.getAttribute("data-bs-theme") === "dark";
         return {
-            textColor: isDark ? '#f8f9fa' : '#212529',
-            gridColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
-            primary: 'rgba(13, 110, 253, 0.8)',
-            primaryBorder: '#0d6efd',
-            secondary: 'rgba(13, 110, 253, 0.4)'
+            textColor: isDark ? '#e0fbfc' : '#023e8a',
+            gridColor: isDark ? 'rgba(144, 224, 239, 0.2)' : 'rgba(0, 119, 182, 0.2)',
+            primary: 'rgba(0, 180, 216, 0.7)',
+            primaryBorder: '#00b4d8',
+            secondary: 'rgba(144, 224, 239, 0.4)'
         };
     }
 
@@ -77,11 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     label: 'Expertise',
                     data: [95, 80, 90, 85, 80],
                     backgroundColor: [
-                        'rgba(13, 110, 253, 0.8)',
-                        'rgba(25, 135, 84, 0.8)',
-                        'rgba(220, 53, 69, 0.8)',
-                        'rgba(255, 193, 7, 0.8)',
-                        'rgba(13, 202, 240, 0.8)'
+                        'rgba(0, 119, 182, 0.8)',   /* Deep Blue */
+                        'rgba(0, 150, 199, 0.8)',   /* Mid Blue */
+                        'rgba(0, 180, 216, 0.8)',   /* Bright Cerulean */
+                        'rgba(72, 202, 228, 0.8)',  /* Soft Light Blue */
+                        'rgba(144, 224, 239, 0.8)'  /* Pale Blue */
                     ],
                     borderWidth: 0
                 }]
