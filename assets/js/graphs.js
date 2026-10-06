@@ -39,7 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         color: colors.textColor,
                         font: { size: 12, family: "'Segoe UI', sans-serif" }
                     },
-                    ticks: { display: false }
+                    min: 0,
+                    max: 100,
+                    ticks: { display: false, stepSize: 20 }
                 }
             }
         };
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 labels: ['C# / .NET Core', 'Python', 'React JS / Next.js', 'JavaScript / TypeScript', 'SQL / MongoDB'],
                 datasets: [{
                     label: 'Proficiency',
-                    data: [95, 85, 90, 88, 80],
+                    data: [100, 80, 100, 100, 80],
                     backgroundColor: colors.primary,
                     borderColor: colors.primaryBorder,
                     pointBackgroundColor: colors.primaryBorder,

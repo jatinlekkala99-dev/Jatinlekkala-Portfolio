@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const htmlElement = document.documentElement;
 
     // Check saved theme
-    const savedTheme = localStorage.getItem("theme") || "dark";
+    const savedTheme = localStorage.getItem("theme") || "light";
     htmlElement.setAttribute("data-bs-theme", savedTheme);
     updateIcon(savedTheme);
 
